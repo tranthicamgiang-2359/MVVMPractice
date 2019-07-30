@@ -16,6 +16,10 @@
 		E13E408322EEE44A005325B9 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E408222EEE44A005325B9 /* ActivityViewModel.swift */; };
 		E13E408622EEE4DB005325B9 /* ListActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E408522EEE4DB005325B9 /* ListActivityViewModel.swift */; };
 		E13E408822EEE7B1005325B9 /* DataStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E408722EEE7B1005325B9 /* DataStoreService.swift */; };
+		E157465422EFC21C00DD04D8 /* StoryboardInitiializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157465322EFC21C00DD04D8 /* StoryboardInitiializable.swift */; };
+		E157465722EFC23200DD04D8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157465622EFC23200DD04D8 /* AppCoordinator.swift */; };
+		E157465922EFC25600DD04D8 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157465822EFC25600DD04D8 /* BaseCoordinator.swift */; };
+		E157465B22EFC26500DD04D8 /* ToDoListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157465A22EFC26400DD04D8 /* ToDoListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		E13E408222EEE44A005325B9 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
 		E13E408522EEE4DB005325B9 /* ListActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListActivityViewModel.swift; sourceTree = "<group>"; };
 		E13E408722EEE7B1005325B9 /* DataStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreService.swift; sourceTree = "<group>"; };
+		E157465322EFC21C00DD04D8 /* StoryboardInitiializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitiializable.swift; sourceTree = "<group>"; };
+		E157465622EFC23200DD04D8 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E157465822EFC25600DD04D8 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		E157465A22EFC26400DD04D8 /* ToDoListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +70,13 @@
 		E13E406822EEDECD005325B9 /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				E157465822EFC25600DD04D8 /* BaseCoordinator.swift */,
+				E157465522EFC22700DD04D8 /* App */,
+				E157465222EFC1ED00DD04D8 /* Utils */,
 				E13E408422EEE48F005325B9 /* View */,
 				E13E408122EEE430005325B9 /* ViewModel */,
 				E13E408022EEE062005325B9 /* Controller */,
 				E13E407D22EEDFD8005325B9 /* Models */,
-				E13E406922EEDECD005325B9 /* AppDelegate.swift */,
 				E13E406D22EEDECD005325B9 /* Main.storyboard */,
 				E13E407022EEDECD005325B9 /* Assets.xcassets */,
 				E13E407222EEDECD005325B9 /* LaunchScreen.storyboard */,
@@ -104,8 +114,26 @@
 			isa = PBXGroup;
 			children = (
 				E13E407B22EEDF71005325B9 /* ToDoListViewController.swift */,
+				E157465A22EFC26400DD04D8 /* ToDoListCoordinator.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E157465222EFC1ED00DD04D8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E157465322EFC21C00DD04D8 /* StoryboardInitiializable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E157465522EFC22700DD04D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E13E406922EEDECD005325B9 /* AppDelegate.swift */,
+				E157465622EFC23200DD04D8 /* AppCoordinator.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E13E407C22EEDF71005325B9 /* ToDoListViewController.swift in Sources */,
+				E157465922EFC25600DD04D8 /* BaseCoordinator.swift in Sources */,
+				E157465422EFC21C00DD04D8 /* StoryboardInitiializable.swift in Sources */,
 				E13E407F22EEE01A005325B9 /* Activity.swift in Sources */,
 				E13E408622EEE4DB005325B9 /* ListActivityViewModel.swift in Sources */,
+				E157465722EFC23200DD04D8 /* AppCoordinator.swift in Sources */,
+				E157465B22EFC26500DD04D8 /* ToDoListCoordinator.swift in Sources */,
 				E13E406A22EEDECD005325B9 /* AppDelegate.swift in Sources */,
 				E13E408322EEE44A005325B9 /* ActivityViewModel.swift in Sources */,
 				E13E408822EEE7B1005325B9 /* DataStoreService.swift in Sources */,

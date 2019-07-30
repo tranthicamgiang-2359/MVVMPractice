@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ToDoListViewController: UITableViewController {
+class ToDoListViewController: UITableViewController, StoryboardInitializable {
     
     @IBOutlet weak var addBarItem: UIBarButtonItem!
     
